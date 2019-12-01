@@ -1,0 +1,9 @@
+LET slaba =
+    REC slaba' sez ->
+        FUN x ->
+            IF x < 1 THEN 
+                sez 
+            ELSE 
+                slaba' (x :: (x * x) :: sez) (x - 1)
+IN
+slaba [] (IF 3 < 4 THEN ((2 * 4) - ((8 * 8) - 61)) ELSE 7)

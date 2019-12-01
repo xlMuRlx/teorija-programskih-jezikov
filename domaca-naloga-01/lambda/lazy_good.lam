@@ -1,0 +1,8 @@
+LET obrni =
+    REC obrni' sez ->
+        FUN acc ->
+            MATCH sez WITH
+            | [] -> acc
+            | x :: xs -> obrni' xs (x :: acc)
+IN
+SND {obrni (1 :: 2 :: ((FUN x -> x * 3) 2) :: (17 - 6) :: 62 :: []) [], (FUN y -> IF y THEN 6 :: 6 :: 6 :: [] ELSE []) TRUE}

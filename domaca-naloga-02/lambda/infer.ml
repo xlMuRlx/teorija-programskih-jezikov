@@ -42,6 +42,7 @@ let rec infer_exp ctx = function
       and a = fresh_ty ()
       in
       a, [(t1, S.ArrowTy (t2, a))] @ eqs1 @ eqs2
+      
 
 
 

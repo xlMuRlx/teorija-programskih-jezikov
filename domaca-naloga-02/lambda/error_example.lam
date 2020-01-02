@@ -1,0 +1,1 @@
+IF ((TRUE :: FALSE :: []) {17, 42}) THEN TRUE ELSE FALSE
